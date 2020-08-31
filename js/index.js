@@ -50,7 +50,7 @@ NewArray[3].textContent = siteContent["nav"]['nav-item-4'];
 NewArray[4].textContent = siteContent["nav"]['nav-item-5'];
 NewArray[5].textContent = siteContent["nav"]['nav-item-6'];
 
-newArray.forEach(element => {
+NewArray.forEach(element => {
   element.style.color = 'green'
 })
 
