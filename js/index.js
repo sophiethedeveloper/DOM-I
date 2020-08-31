@@ -62,16 +62,18 @@ const projectLink = document.createElement('a');
 projectLink.textContent = "Projects";
 projectLink.href = "#";
 ArrayLinks.prepend(projectLink);
+projectLink.style.color = 'green';
 
 //apend
 const socialsLinks = document.createElement('a');
 socialsLinks.textContent = "Socials";
 socialsLinks.href = "#";
-ArrayLinks.append(socialsLinks)
+ArrayLinks.append(socialsLinks);
+socialsLinks.style.color = 'green';
 
 //CTA
 const title = document.querySelector('cta-text, h1');
-title.innerHTML = siteContent["cta"]["h1"]
+title.textContent = siteContent["cta"]["h1"]
 
 const circleImage = document.querySelector("#cta-img");
 circleImage.src = siteContent["cta"]["img-src"];
@@ -107,8 +109,6 @@ paragraphs[7].textContent = siteContent["contact"]["email"];
 // //contact
 // const contactTitle = document.querySelector(".contact h4");
 // contactTitle.textContent = siteContent["contact"]["contact-h4"];
-
-
 
 //footer
 const footer = document.querySelector("footer");
